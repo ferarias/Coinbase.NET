@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3"></PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0"></PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CoinbaseConnector\CoinbaseConnector.csproj">
+      <Project>{2a9d52d4-0f7e-49f4-ab3e-ab79b67aa3c4}</Project>
+      <Name>CoinbaseConnector</Name>
+    </ProjectReference>
+  </ItemGroup>  
+</Project>
